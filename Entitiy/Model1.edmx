@@ -1,0 +1,873 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="ETA_TEK2012_2012Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'ETA_TEK2012_2012.dbo.ADRESLER' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="ADRESLER">
+          <Key>
+            <PropertyRef Name="ADRMODUL" />
+            <PropertyRef Name="ADRKONU" />
+            <PropertyRef Name="ADRTIP" />
+            <PropertyRef Name="ADRKOD1" />
+            <PropertyRef Name="ADRKOD2" />
+            <PropertyRef Name="ADRREFNO" />
+            <PropertyRef Name="ADRITEMNO" />
+            <PropertyRef Name="ADRYETKILI" />
+            <PropertyRef Name="ADRADRES1" />
+            <PropertyRef Name="ADRADRES2" />
+            <PropertyRef Name="ADRADRES3" />
+            <PropertyRef Name="ADRPOSTAKOD" />
+            <PropertyRef Name="ADRULKE" />
+            <PropertyRef Name="ADRIL" />
+            <PropertyRef Name="ADRILCE" />
+            <PropertyRef Name="ADRTEL1" />
+            <PropertyRef Name="ADRTEL2" />
+            <PropertyRef Name="ADRTEL3" />
+            <PropertyRef Name="ADRFAX1" />
+            <PropertyRef Name="ADRFAX2" />
+            <PropertyRef Name="ADRFAX3" />
+            <PropertyRef Name="ADREMAIL1" />
+            <PropertyRef Name="ADREMAIL2" />
+            <PropertyRef Name="ADREMAIL3" />
+            <PropertyRef Name="ADRURL1" />
+            <PropertyRef Name="ADRURL2" />
+            <PropertyRef Name="ADRURL3" />
+          </Key>
+          <Property Name="ADRMODUL" Type="int" Nullable="false" />
+          <Property Name="ADRKONU" Type="int" Nullable="false" />
+          <Property Name="ADRTIP" Type="int" Nullable="false" />
+          <Property Name="ADRKOD1" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="ADRKOD2" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="ADRREFNO" Type="int" Nullable="false" />
+          <Property Name="ADRITEMNO" Type="int" Nullable="false" />
+          <Property Name="ADRYETKILI" Type="varchar" MaxLength="80" Nullable="false" />
+          <Property Name="ADRADRES1" Type="varchar" MaxLength="80" Nullable="false" />
+          <Property Name="ADRADRES2" Type="varchar" MaxLength="80" Nullable="false" />
+          <Property Name="ADRADRES3" Type="varchar" MaxLength="80" Nullable="false" />
+          <Property Name="ADRPOSTAKOD" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="ADRULKE" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="ADRIL" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="ADRILCE" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="ADRTEL1" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="ADRTEL2" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="ADRTEL3" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="ADRFAX1" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="ADRFAX2" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="ADRFAX3" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="ADREMAIL1" Type="varchar" MaxLength="80" Nullable="false" />
+          <Property Name="ADREMAIL2" Type="varchar" MaxLength="80" Nullable="false" />
+          <Property Name="ADREMAIL3" Type="varchar" MaxLength="80" Nullable="false" />
+          <Property Name="ADRURL1" Type="varchar" MaxLength="80" Nullable="false" />
+          <Property Name="ADRURL2" Type="varchar" MaxLength="80" Nullable="false" />
+          <Property Name="ADRURL3" Type="varchar" MaxLength="80" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+warning 6002: The table/view 'ETA_TEK2012_2012.dbo.CARKART' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+        <EntityType Name="CARKART">
+          <Key>
+            <PropertyRef Name="CARKOD" />
+            <PropertyRef Name="CARUNVAN" />
+            <PropertyRef Name="CARUNVAN2" />
+            <PropertyRef Name="CARUNVAN3" />
+            <PropertyRef Name="CARYETKILI" />
+            <PropertyRef Name="CARYETKILI2" />
+            <PropertyRef Name="CARYETKILI3" />
+            <PropertyRef Name="CAROZKOD1" />
+            <PropertyRef Name="CAROZKOD2" />
+            <PropertyRef Name="CAROZKOD3" />
+            <PropertyRef Name="CAROZKOD4" />
+            <PropertyRef Name="CAROZKOD5" />
+            <PropertyRef Name="CARDOVKOD1" />
+            <PropertyRef Name="CARDOVTUR1" />
+            <PropertyRef Name="CARDOVKOD2" />
+            <PropertyRef Name="CARDOVTUR2" />
+            <PropertyRef Name="CARDOVKOD3" />
+            <PropertyRef Name="CARDOVTUR3" />
+            <PropertyRef Name="CARDOVKOD4" />
+            <PropertyRef Name="CARDOVTUR4" />
+            <PropertyRef Name="CARDOVKOD5" />
+            <PropertyRef Name="CARDOVTUR5" />
+            <PropertyRef Name="CARVERDAIRE" />
+            <PropertyRef Name="CARVERHESNO" />
+            <PropertyRef Name="CAROZELKARTNO" />
+            <PropertyRef Name="CARODASICILNO" />
+            <PropertyRef Name="CARACIK1" />
+            <PropertyRef Name="CARACIK2" />
+            <PropertyRef Name="CARACIK3" />
+            <PropertyRef Name="CARACIK4" />
+            <PropertyRef Name="CARACIK5" />
+            <PropertyRef Name="CARCALFLAG" />
+            <PropertyRef Name="CARDERECE" />
+            <PropertyRef Name="CARUYARI" />
+            <PropertyRef Name="CARISKYUZ" />
+            <PropertyRef Name="CARMUAFGUN" />
+            <PropertyRef Name="CARTAHSILKOD" />
+            <PropertyRef Name="CARTAHSILACK" />
+            <PropertyRef Name="CARKREDILIMIT" />
+            <PropertyRef Name="CARRISKLIMIT" />
+            <PropertyRef Name="CARSIPALIMLIMIT" />
+            <PropertyRef Name="CARSIPSATIMLIMIT" />
+            <PropertyRef Name="CARHESAPGUN" />
+            <PropertyRef Name="CARVADENO" />
+            <PropertyRef Name="CARODEPLANGRUPNO" />
+            <PropertyRef Name="CARTAKSITGRUPNO" />
+            <PropertyRef Name="CARMUTABAKATTAR" />
+            <PropertyRef Name="CARMUTABAKATTUT" />
+            <PropertyRef Name="CARGRUPKODU" />
+            <PropertyRef Name="CARSEKTORKODU" />
+            <PropertyRef Name="CARBOLGEKODU" />
+            <PropertyRef Name="CARSTKALISFIYNO" />
+            <PropertyRef Name="CARSTKSATISFIYNO" />
+            <PropertyRef Name="CARLISFIYNO" />
+            <PropertyRef Name="CARKEFILKODU1" />
+            <PropertyRef Name="CARKEFILKODU2" />
+            <PropertyRef Name="CARKEFILKODU3" />
+            <PropertyRef Name="CARKEFILKODU4" />
+            <PropertyRef Name="CARKEFILKODU5" />
+            <PropertyRef Name="CARMUHTIPI" />
+            <PropertyRef Name="CARMUHKODU" />
+            <PropertyRef Name="CARYAZADRNO" />
+            <PropertyRef Name="CARFATADRNO" />
+            <PropertyRef Name="CARIRSADRNO" />
+            <PropertyRef Name="CARBORCTOP" />
+            <PropertyRef Name="CARALACAKTOP" />
+            <PropertyRef Name="CARBAKIYE" />
+            <PropertyRef Name="CARKREDIDOVKOD" />
+            <PropertyRef Name="CARKREDIDOVTUR" />
+            <PropertyRef Name="CARRISKDOVKOD" />
+            <PropertyRef Name="CARRISKDOVTUR" />
+            <PropertyRef Name="CARTEMINATTUT" />
+            <PropertyRef Name="CARTEMDOVKOD" />
+            <PropertyRef Name="CARTEMDOVTUR" />
+            <PropertyRef Name="CARGRUPKOD" />
+            <PropertyRef Name="CARKARALISTEFLAG" />
+            <PropertyRef Name="CARKARALISTEACK" />
+            <PropertyRef Name="CARSEVNO" />
+            <PropertyRef Name="CARGIRIRSTOP" />
+            <PropertyRef Name="CARCIKIRSTOP" />
+            <PropertyRef Name="CARGIRSIPTOPTUT" />
+            <PropertyRef Name="CARCIKSIPTOPTUT" />
+            <PropertyRef Name="CARGIRSIPTUTFLAG" />
+            <PropertyRef Name="CARGIRSIPMINTUT" />
+            <PropertyRef Name="CARGIRSIPMAXTUT" />
+            <PropertyRef Name="CARCIKSIPTUTFLAG" />
+            <PropertyRef Name="CARCIKSIPMINTUT" />
+            <PropertyRef Name="CARCIKSIPMAXTUT" />
+            <PropertyRef Name="CAROZELBORCTOP" />
+            <PropertyRef Name="CAROZELALACAKTOP" />
+            <PropertyRef Name="CAROZELBAKIYE" />
+            <PropertyRef Name="CAREKCHAR1" />
+            <PropertyRef Name="CAREKCHAR2" />
+            <PropertyRef Name="CAREKINT1" />
+            <PropertyRef Name="CAREKINT2" />
+            <PropertyRef Name="CAREKDATE1" />
+            <PropertyRef Name="CAREKDATE2" />
+            <PropertyRef Name="CAREKDBL1" />
+            <PropertyRef Name="CAREKDBL2" />
+            <PropertyRef Name="CAREFATFLAG" />
+            <PropertyRef Name="CAREFATSENARYO" />
+            <PropertyRef Name="CAREFATEMAIL" />
+            <PropertyRef Name="CAREFATDONEMTIP" />
+            <PropertyRef Name="CAREFATDONEMDEG" />
+          </Key>
+          <Property Name="CARKOD" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="CARUNVAN" Type="varchar" MaxLength="80" Nullable="false" />
+          <Property Name="CARUNVAN2" Type="varchar" MaxLength="80" Nullable="false" />
+          <Property Name="CARUNVAN3" Type="varchar" MaxLength="80" Nullable="false" />
+          <Property Name="CARYETKILI" Type="varchar" MaxLength="80" Nullable="false" />
+          <Property Name="CARYETKILI2" Type="varchar" MaxLength="80" Nullable="false" />
+          <Property Name="CARYETKILI3" Type="varchar" MaxLength="80" Nullable="false" />
+          <Property Name="CAROZKOD1" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="CAROZKOD2" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="CAROZKOD3" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="CAROZKOD4" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="CAROZKOD5" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="CARDOVKOD1" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="CARDOVTUR1" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="CARDOVKOD2" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="CARDOVTUR2" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="CARDOVKOD3" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="CARDOVTUR3" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="CARDOVKOD4" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="CARDOVTUR4" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="CARDOVKOD5" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="CARDOVTUR5" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="CARVERDAIRE" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="CARVERHESNO" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="CAROZELKARTNO" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="CARODASICILNO" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="CARACIK1" Type="varchar" MaxLength="80" Nullable="false" />
+          <Property Name="CARACIK2" Type="varchar" MaxLength="80" Nullable="false" />
+          <Property Name="CARACIK3" Type="varchar" MaxLength="80" Nullable="false" />
+          <Property Name="CARACIK4" Type="varchar" MaxLength="80" Nullable="false" />
+          <Property Name="CARACIK5" Type="varchar" MaxLength="80" Nullable="false" />
+          <Property Name="CARCALFLAG" Type="int" Nullable="false" />
+          <Property Name="CARDERECE" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="CARUYARI" Type="varchar" MaxLength="80" Nullable="false" />
+          <Property Name="CARISKYUZ" Type="numeric" Precision="28" Scale="9" Nullable="false" />
+          <Property Name="CARMUAFGUN" Type="int" Nullable="false" />
+          <Property Name="CARTAHSILKOD" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="CARTAHSILACK" Type="varchar" MaxLength="80" Nullable="false" />
+          <Property Name="CARKREDILIMIT" Type="numeric" Precision="28" Scale="9" Nullable="false" />
+          <Property Name="CARRISKLIMIT" Type="numeric" Precision="28" Scale="9" Nullable="false" />
+          <Property Name="CARSIPALIMLIMIT" Type="numeric" Precision="28" Scale="9" Nullable="false" />
+          <Property Name="CARSIPSATIMLIMIT" Type="numeric" Precision="28" Scale="9" Nullable="false" />
+          <Property Name="CARHESAPGUN" Type="int" Nullable="false" />
+          <Property Name="CARVADENO" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="CARODEPLANGRUPNO" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="CARTAKSITGRUPNO" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="CARMUTABAKATTAR" Type="datetime" Nullable="false" />
+          <Property Name="CARMUTABAKATTUT" Type="numeric" Precision="28" Scale="9" Nullable="false" />
+          <Property Name="CARGRUPKODU" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="CARSEKTORKODU" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="CARBOLGEKODU" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="CARSTKALISFIYNO" Type="varchar" MaxLength="7" Nullable="false" />
+          <Property Name="CARSTKSATISFIYNO" Type="varchar" MaxLength="7" Nullable="false" />
+          <Property Name="CARLISFIYNO" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="CARKEFILKODU1" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="CARKEFILKODU2" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="CARKEFILKODU3" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="CARKEFILKODU4" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="CARKEFILKODU5" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="CARMUHTIPI" Type="int" Nullable="false" />
+          <Property Name="CARMUHKODU" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="CARYAZADRNO" Type="int" Nullable="false" />
+          <Property Name="CARFATADRNO" Type="int" Nullable="false" />
+          <Property Name="CARIRSADRNO" Type="int" Nullable="false" />
+          <Property Name="CARBORCTOP" Type="numeric" Precision="28" Scale="9" Nullable="false" />
+          <Property Name="CARALACAKTOP" Type="numeric" Precision="28" Scale="9" Nullable="false" />
+          <Property Name="CARBAKIYE" Type="numeric" Precision="28" Scale="9" Nullable="false" />
+          <Property Name="CARKREDIDOVKOD" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="CARKREDIDOVTUR" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="CARRISKDOVKOD" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="CARRISKDOVTUR" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="CARTEMINATTUT" Type="numeric" Precision="28" Scale="9" Nullable="false" />
+          <Property Name="CARTEMDOVKOD" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="CARTEMDOVTUR" Type="varchar" MaxLength="10" Nullable="false" />
+          <Property Name="CARGRUPKOD" Type="varchar" MaxLength="40" Nullable="false" />
+          <Property Name="CARKARALISTEFLAG" Type="int" Nullable="false" />
+          <Property Name="CARKARALISTEACK" Type="varchar" MaxLength="80" Nullable="false" />
+          <Property Name="CARSEVNO" Type="int" Nullable="false" />
+          <Property Name="CARGIRIRSTOP" Type="numeric" Precision="28" Scale="9" Nullable="false" />
+          <Property Name="CARCIKIRSTOP" Type="numeric" Precision="28" Scale="9" Nullable="false" />
+          <Property Name="CARGIRSIPTOPTUT" Type="numeric" Precision="28" Scale="9" Nullable="false" />
+          <Property Name="CARCIKSIPTOPTUT" Type="numeric" Precision="28" Scale="9" Nullable="false" />
+          <Property Name="CARGIRSIPTUTFLAG" Type="int" Nullable="false" />
+          <Property Name="CARGIRSIPMINTUT" Type="numeric" Precision="28" Scale="9" Nullable="false" />
+          <Property Name="CARGIRSIPMAXTUT" Type="numeric" Precision="28" Scale="9" Nullable="false" />
+          <Property Name="CARCIKSIPTUTFLAG" Type="int" Nullable="false" />
+          <Property Name="CARCIKSIPMINTUT" Type="numeric" Precision="28" Scale="9" Nullable="false" />
+          <Property Name="CARCIKSIPMAXTUT" Type="numeric" Precision="28" Scale="9" Nullable="false" />
+          <Property Name="CAROZELBORCTOP" Type="numeric" Precision="28" Scale="9" Nullable="false" />
+          <Property Name="CAROZELALACAKTOP" Type="numeric" Precision="28" Scale="9" Nullable="false" />
+          <Property Name="CAROZELBAKIYE" Type="numeric" Precision="28" Scale="9" Nullable="false" />
+          <Property Name="CAREKCHAR1" Type="varchar" MaxLength="80" Nullable="false" />
+          <Property Name="CAREKCHAR2" Type="varchar" MaxLength="80" Nullable="false" />
+          <Property Name="CAREKINT1" Type="int" Nullable="false" />
+          <Property Name="CAREKINT2" Type="int" Nullable="false" />
+          <Property Name="CAREKDATE1" Type="datetime" Nullable="false" />
+          <Property Name="CAREKDATE2" Type="datetime" Nullable="false" />
+          <Property Name="CAREKDBL1" Type="numeric" Precision="28" Scale="9" Nullable="false" />
+          <Property Name="CAREKDBL2" Type="numeric" Precision="28" Scale="9" Nullable="false" />
+          <Property Name="CAREFATFLAG" Type="int" Nullable="false" />
+          <Property Name="CAREFATSENARYO" Type="int" Nullable="false" />
+          <Property Name="CAREFATEMAIL" Type="varchar" MaxLength="80" Nullable="false" />
+          <Property Name="CAREFATDONEMTIP" Type="int" Nullable="false" />
+          <Property Name="CAREFATDONEMDEG" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="ETA_TEK2012_2012ModelStoreContainer">
+          <EntitySet Name="ADRESLER" EntityType="Self.ADRESLER" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [ADRESLER].[ADRMODUL] AS [ADRMODUL], 
+    [ADRESLER].[ADRKONU] AS [ADRKONU], 
+    [ADRESLER].[ADRTIP] AS [ADRTIP], 
+    [ADRESLER].[ADRKOD1] AS [ADRKOD1], 
+    [ADRESLER].[ADRKOD2] AS [ADRKOD2], 
+    [ADRESLER].[ADRREFNO] AS [ADRREFNO], 
+    [ADRESLER].[ADRITEMNO] AS [ADRITEMNO], 
+    [ADRESLER].[ADRYETKILI] AS [ADRYETKILI], 
+    [ADRESLER].[ADRADRES1] AS [ADRADRES1], 
+    [ADRESLER].[ADRADRES2] AS [ADRADRES2], 
+    [ADRESLER].[ADRADRES3] AS [ADRADRES3], 
+    [ADRESLER].[ADRPOSTAKOD] AS [ADRPOSTAKOD], 
+    [ADRESLER].[ADRULKE] AS [ADRULKE], 
+    [ADRESLER].[ADRIL] AS [ADRIL], 
+    [ADRESLER].[ADRILCE] AS [ADRILCE], 
+    [ADRESLER].[ADRTEL1] AS [ADRTEL1], 
+    [ADRESLER].[ADRTEL2] AS [ADRTEL2], 
+    [ADRESLER].[ADRTEL3] AS [ADRTEL3], 
+    [ADRESLER].[ADRFAX1] AS [ADRFAX1], 
+    [ADRESLER].[ADRFAX2] AS [ADRFAX2], 
+    [ADRESLER].[ADRFAX3] AS [ADRFAX3], 
+    [ADRESLER].[ADREMAIL1] AS [ADREMAIL1], 
+    [ADRESLER].[ADREMAIL2] AS [ADREMAIL2], 
+    [ADRESLER].[ADREMAIL3] AS [ADREMAIL3], 
+    [ADRESLER].[ADRURL1] AS [ADRURL1], 
+    [ADRESLER].[ADRURL2] AS [ADRURL2], 
+    [ADRESLER].[ADRURL3] AS [ADRURL3]
+    FROM [dbo].[ADRESLER] AS [ADRESLER]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="CARKART" EntityType="Self.CARKART" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [CARKART].[CARKOD] AS [CARKOD], 
+    [CARKART].[CARUNVAN] AS [CARUNVAN], 
+    [CARKART].[CARUNVAN2] AS [CARUNVAN2], 
+    [CARKART].[CARUNVAN3] AS [CARUNVAN3], 
+    [CARKART].[CARYETKILI] AS [CARYETKILI], 
+    [CARKART].[CARYETKILI2] AS [CARYETKILI2], 
+    [CARKART].[CARYETKILI3] AS [CARYETKILI3], 
+    [CARKART].[CAROZKOD1] AS [CAROZKOD1], 
+    [CARKART].[CAROZKOD2] AS [CAROZKOD2], 
+    [CARKART].[CAROZKOD3] AS [CAROZKOD3], 
+    [CARKART].[CAROZKOD4] AS [CAROZKOD4], 
+    [CARKART].[CAROZKOD5] AS [CAROZKOD5], 
+    [CARKART].[CARDOVKOD1] AS [CARDOVKOD1], 
+    [CARKART].[CARDOVTUR1] AS [CARDOVTUR1], 
+    [CARKART].[CARDOVKOD2] AS [CARDOVKOD2], 
+    [CARKART].[CARDOVTUR2] AS [CARDOVTUR2], 
+    [CARKART].[CARDOVKOD3] AS [CARDOVKOD3], 
+    [CARKART].[CARDOVTUR3] AS [CARDOVTUR3], 
+    [CARKART].[CARDOVKOD4] AS [CARDOVKOD4], 
+    [CARKART].[CARDOVTUR4] AS [CARDOVTUR4], 
+    [CARKART].[CARDOVKOD5] AS [CARDOVKOD5], 
+    [CARKART].[CARDOVTUR5] AS [CARDOVTUR5], 
+    [CARKART].[CARVERDAIRE] AS [CARVERDAIRE], 
+    [CARKART].[CARVERHESNO] AS [CARVERHESNO], 
+    [CARKART].[CAROZELKARTNO] AS [CAROZELKARTNO], 
+    [CARKART].[CARODASICILNO] AS [CARODASICILNO], 
+    [CARKART].[CARACIK1] AS [CARACIK1], 
+    [CARKART].[CARACIK2] AS [CARACIK2], 
+    [CARKART].[CARACIK3] AS [CARACIK3], 
+    [CARKART].[CARACIK4] AS [CARACIK4], 
+    [CARKART].[CARACIK5] AS [CARACIK5], 
+    [CARKART].[CARCALFLAG] AS [CARCALFLAG], 
+    [CARKART].[CARDERECE] AS [CARDERECE], 
+    [CARKART].[CARUYARI] AS [CARUYARI], 
+    [CARKART].[CARISKYUZ] AS [CARISKYUZ], 
+    [CARKART].[CARMUAFGUN] AS [CARMUAFGUN], 
+    [CARKART].[CARTAHSILKOD] AS [CARTAHSILKOD], 
+    [CARKART].[CARTAHSILACK] AS [CARTAHSILACK], 
+    [CARKART].[CARKREDILIMIT] AS [CARKREDILIMIT], 
+    [CARKART].[CARRISKLIMIT] AS [CARRISKLIMIT], 
+    [CARKART].[CARSIPALIMLIMIT] AS [CARSIPALIMLIMIT], 
+    [CARKART].[CARSIPSATIMLIMIT] AS [CARSIPSATIMLIMIT], 
+    [CARKART].[CARHESAPGUN] AS [CARHESAPGUN], 
+    [CARKART].[CARVADENO] AS [CARVADENO], 
+    [CARKART].[CARODEPLANGRUPNO] AS [CARODEPLANGRUPNO], 
+    [CARKART].[CARTAKSITGRUPNO] AS [CARTAKSITGRUPNO], 
+    [CARKART].[CARMUTABAKATTAR] AS [CARMUTABAKATTAR], 
+    [CARKART].[CARMUTABAKATTUT] AS [CARMUTABAKATTUT], 
+    [CARKART].[CARGRUPKODU] AS [CARGRUPKODU], 
+    [CARKART].[CARSEKTORKODU] AS [CARSEKTORKODU], 
+    [CARKART].[CARBOLGEKODU] AS [CARBOLGEKODU], 
+    [CARKART].[CARSTKALISFIYNO] AS [CARSTKALISFIYNO], 
+    [CARKART].[CARSTKSATISFIYNO] AS [CARSTKSATISFIYNO], 
+    [CARKART].[CARLISFIYNO] AS [CARLISFIYNO], 
+    [CARKART].[CARKEFILKODU1] AS [CARKEFILKODU1], 
+    [CARKART].[CARKEFILKODU2] AS [CARKEFILKODU2], 
+    [CARKART].[CARKEFILKODU3] AS [CARKEFILKODU3], 
+    [CARKART].[CARKEFILKODU4] AS [CARKEFILKODU4], 
+    [CARKART].[CARKEFILKODU5] AS [CARKEFILKODU5], 
+    [CARKART].[CARMUHTIPI] AS [CARMUHTIPI], 
+    [CARKART].[CARMUHKODU] AS [CARMUHKODU], 
+    [CARKART].[CARYAZADRNO] AS [CARYAZADRNO], 
+    [CARKART].[CARFATADRNO] AS [CARFATADRNO], 
+    [CARKART].[CARIRSADRNO] AS [CARIRSADRNO], 
+    [CARKART].[CARBORCTOP] AS [CARBORCTOP], 
+    [CARKART].[CARALACAKTOP] AS [CARALACAKTOP], 
+    [CARKART].[CARBAKIYE] AS [CARBAKIYE], 
+    [CARKART].[CARKREDIDOVKOD] AS [CARKREDIDOVKOD], 
+    [CARKART].[CARKREDIDOVTUR] AS [CARKREDIDOVTUR], 
+    [CARKART].[CARRISKDOVKOD] AS [CARRISKDOVKOD], 
+    [CARKART].[CARRISKDOVTUR] AS [CARRISKDOVTUR], 
+    [CARKART].[CARTEMINATTUT] AS [CARTEMINATTUT], 
+    [CARKART].[CARTEMDOVKOD] AS [CARTEMDOVKOD], 
+    [CARKART].[CARTEMDOVTUR] AS [CARTEMDOVTUR], 
+    [CARKART].[CARGRUPKOD] AS [CARGRUPKOD], 
+    [CARKART].[CARKARALISTEFLAG] AS [CARKARALISTEFLAG], 
+    [CARKART].[CARKARALISTEACK] AS [CARKARALISTEACK], 
+    [CARKART].[CARSEVNO] AS [CARSEVNO], 
+    [CARKART].[CARGIRIRSTOP] AS [CARGIRIRSTOP], 
+    [CARKART].[CARCIKIRSTOP] AS [CARCIKIRSTOP], 
+    [CARKART].[CARGIRSIPTOPTUT] AS [CARGIRSIPTOPTUT], 
+    [CARKART].[CARCIKSIPTOPTUT] AS [CARCIKSIPTOPTUT], 
+    [CARKART].[CARGIRSIPTUTFLAG] AS [CARGIRSIPTUTFLAG], 
+    [CARKART].[CARGIRSIPMINTUT] AS [CARGIRSIPMINTUT], 
+    [CARKART].[CARGIRSIPMAXTUT] AS [CARGIRSIPMAXTUT], 
+    [CARKART].[CARCIKSIPTUTFLAG] AS [CARCIKSIPTUTFLAG], 
+    [CARKART].[CARCIKSIPMINTUT] AS [CARCIKSIPMINTUT], 
+    [CARKART].[CARCIKSIPMAXTUT] AS [CARCIKSIPMAXTUT], 
+    [CARKART].[CAROZELBORCTOP] AS [CAROZELBORCTOP], 
+    [CARKART].[CAROZELALACAKTOP] AS [CAROZELALACAKTOP], 
+    [CARKART].[CAROZELBAKIYE] AS [CAROZELBAKIYE], 
+    [CARKART].[CAREKCHAR1] AS [CAREKCHAR1], 
+    [CARKART].[CAREKCHAR2] AS [CAREKCHAR2], 
+    [CARKART].[CAREKINT1] AS [CAREKINT1], 
+    [CARKART].[CAREKINT2] AS [CAREKINT2], 
+    [CARKART].[CAREKDATE1] AS [CAREKDATE1], 
+    [CARKART].[CAREKDATE2] AS [CAREKDATE2], 
+    [CARKART].[CAREKDBL1] AS [CAREKDBL1], 
+    [CARKART].[CAREKDBL2] AS [CAREKDBL2], 
+    [CARKART].[CAREFATFLAG] AS [CAREFATFLAG], 
+    [CARKART].[CAREFATSENARYO] AS [CAREFATSENARYO], 
+    [CARKART].[CAREFATEMAIL] AS [CAREFATEMAIL], 
+    [CARKART].[CAREFATDONEMTIP] AS [CAREFATDONEMTIP], 
+    [CARKART].[CAREFATDONEMDEG] AS [CAREFATDONEMDEG]
+    FROM [dbo].[CARKART] AS [CARKART]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="ETA_TEK2012_2012Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="CARKART">
+          <Key>
+            <PropertyRef Name="CARKOD" />
+            <PropertyRef Name="CARUNVAN" />
+            <PropertyRef Name="CARUNVAN2" />
+            <PropertyRef Name="CARUNVAN3" />
+            <PropertyRef Name="CARYETKILI" />
+            <PropertyRef Name="CARYETKILI2" />
+            <PropertyRef Name="CARYETKILI3" />
+            <PropertyRef Name="CAROZKOD1" />
+            <PropertyRef Name="CAROZKOD2" />
+            <PropertyRef Name="CAROZKOD3" />
+            <PropertyRef Name="CAROZKOD4" />
+            <PropertyRef Name="CAROZKOD5" />
+            <PropertyRef Name="CARDOVKOD1" />
+            <PropertyRef Name="CARDOVTUR1" />
+            <PropertyRef Name="CARDOVKOD2" />
+            <PropertyRef Name="CARDOVTUR2" />
+            <PropertyRef Name="CARDOVKOD3" />
+            <PropertyRef Name="CARDOVTUR3" />
+            <PropertyRef Name="CARDOVKOD4" />
+            <PropertyRef Name="CARDOVTUR4" />
+            <PropertyRef Name="CARDOVKOD5" />
+            <PropertyRef Name="CARDOVTUR5" />
+            <PropertyRef Name="CARVERDAIRE" />
+            <PropertyRef Name="CARVERHESNO" />
+            <PropertyRef Name="CAROZELKARTNO" />
+            <PropertyRef Name="CARODASICILNO" />
+            <PropertyRef Name="CARACIK1" />
+            <PropertyRef Name="CARACIK2" />
+            <PropertyRef Name="CARACIK3" />
+            <PropertyRef Name="CARACIK4" />
+            <PropertyRef Name="CARACIK5" />
+            <PropertyRef Name="CARCALFLAG" />
+            <PropertyRef Name="CARDERECE" />
+            <PropertyRef Name="CARUYARI" />
+            <PropertyRef Name="CARISKYUZ" />
+            <PropertyRef Name="CARMUAFGUN" />
+            <PropertyRef Name="CARTAHSILKOD" />
+            <PropertyRef Name="CARTAHSILACK" />
+            <PropertyRef Name="CARKREDILIMIT" />
+            <PropertyRef Name="CARRISKLIMIT" />
+            <PropertyRef Name="CARSIPALIMLIMIT" />
+            <PropertyRef Name="CARSIPSATIMLIMIT" />
+            <PropertyRef Name="CARHESAPGUN" />
+            <PropertyRef Name="CARVADENO" />
+            <PropertyRef Name="CARODEPLANGRUPNO" />
+            <PropertyRef Name="CARTAKSITGRUPNO" />
+            <PropertyRef Name="CARMUTABAKATTAR" />
+            <PropertyRef Name="CARMUTABAKATTUT" />
+            <PropertyRef Name="CARGRUPKODU" />
+            <PropertyRef Name="CARSEKTORKODU" />
+            <PropertyRef Name="CARBOLGEKODU" />
+            <PropertyRef Name="CARSTKALISFIYNO" />
+            <PropertyRef Name="CARSTKSATISFIYNO" />
+            <PropertyRef Name="CARLISFIYNO" />
+            <PropertyRef Name="CARKEFILKODU1" />
+            <PropertyRef Name="CARKEFILKODU2" />
+            <PropertyRef Name="CARKEFILKODU3" />
+            <PropertyRef Name="CARKEFILKODU4" />
+            <PropertyRef Name="CARKEFILKODU5" />
+            <PropertyRef Name="CARMUHTIPI" />
+            <PropertyRef Name="CARMUHKODU" />
+            <PropertyRef Name="CARYAZADRNO" />
+            <PropertyRef Name="CARFATADRNO" />
+            <PropertyRef Name="CARIRSADRNO" />
+            <PropertyRef Name="CARBORCTOP" />
+            <PropertyRef Name="CARALACAKTOP" />
+            <PropertyRef Name="CARBAKIYE" />
+            <PropertyRef Name="CARKREDIDOVKOD" />
+            <PropertyRef Name="CARKREDIDOVTUR" />
+            <PropertyRef Name="CARRISKDOVKOD" />
+            <PropertyRef Name="CARRISKDOVTUR" />
+            <PropertyRef Name="CARTEMINATTUT" />
+            <PropertyRef Name="CARTEMDOVKOD" />
+            <PropertyRef Name="CARTEMDOVTUR" />
+            <PropertyRef Name="CARGRUPKOD" />
+            <PropertyRef Name="CARKARALISTEFLAG" />
+            <PropertyRef Name="CARKARALISTEACK" />
+            <PropertyRef Name="CARSEVNO" />
+            <PropertyRef Name="CARGIRIRSTOP" />
+            <PropertyRef Name="CARCIKIRSTOP" />
+            <PropertyRef Name="CARGIRSIPTOPTUT" />
+            <PropertyRef Name="CARCIKSIPTOPTUT" />
+            <PropertyRef Name="CARGIRSIPTUTFLAG" />
+            <PropertyRef Name="CARGIRSIPMINTUT" />
+            <PropertyRef Name="CARGIRSIPMAXTUT" />
+            <PropertyRef Name="CARCIKSIPTUTFLAG" />
+            <PropertyRef Name="CARCIKSIPMINTUT" />
+            <PropertyRef Name="CARCIKSIPMAXTUT" />
+            <PropertyRef Name="CAROZELBORCTOP" />
+            <PropertyRef Name="CAROZELALACAKTOP" />
+            <PropertyRef Name="CAROZELBAKIYE" />
+            <PropertyRef Name="CAREKCHAR1" />
+            <PropertyRef Name="CAREKCHAR2" />
+            <PropertyRef Name="CAREKINT1" />
+            <PropertyRef Name="CAREKINT2" />
+            <PropertyRef Name="CAREKDATE1" />
+            <PropertyRef Name="CAREKDATE2" />
+            <PropertyRef Name="CAREKDBL1" />
+            <PropertyRef Name="CAREKDBL2" />
+            <PropertyRef Name="CAREFATFLAG" />
+            <PropertyRef Name="CAREFATSENARYO" />
+            <PropertyRef Name="CAREFATEMAIL" />
+            <PropertyRef Name="CAREFATDONEMTIP" />
+            <PropertyRef Name="CAREFATDONEMDEG" />
+          </Key>
+          <Property Name="CARKOD" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CARUNVAN" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CARUNVAN2" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CARUNVAN3" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CARYETKILI" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CARYETKILI2" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CARYETKILI3" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CAROZKOD1" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CAROZKOD2" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CAROZKOD3" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CAROZKOD4" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CAROZKOD5" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CARDOVKOD1" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CARDOVTUR1" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CARDOVKOD2" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CARDOVTUR2" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CARDOVKOD3" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CARDOVTUR3" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CARDOVKOD4" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CARDOVTUR4" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CARDOVKOD5" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CARDOVTUR5" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CARVERDAIRE" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CARVERHESNO" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CAROZELKARTNO" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CARODASICILNO" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CARACIK1" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CARACIK2" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CARACIK3" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CARACIK4" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CARACIK5" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CARCALFLAG" Type="Int32" Nullable="false" />
+          <Property Name="CARDERECE" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CARUYARI" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CARISKYUZ" Type="Decimal" Precision="28" Scale="9" Nullable="false" />
+          <Property Name="CARMUAFGUN" Type="Int32" Nullable="false" />
+          <Property Name="CARTAHSILKOD" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CARTAHSILACK" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CARKREDILIMIT" Type="Decimal" Precision="28" Scale="9" Nullable="false" />
+          <Property Name="CARRISKLIMIT" Type="Decimal" Precision="28" Scale="9" Nullable="false" />
+          <Property Name="CARSIPALIMLIMIT" Type="Decimal" Precision="28" Scale="9" Nullable="false" />
+          <Property Name="CARSIPSATIMLIMIT" Type="Decimal" Precision="28" Scale="9" Nullable="false" />
+          <Property Name="CARHESAPGUN" Type="Int32" Nullable="false" />
+          <Property Name="CARVADENO" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CARODEPLANGRUPNO" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CARTAKSITGRUPNO" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CARMUTABAKATTAR" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CARMUTABAKATTUT" Type="Decimal" Precision="28" Scale="9" Nullable="false" />
+          <Property Name="CARGRUPKODU" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CARSEKTORKODU" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CARBOLGEKODU" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CARSTKALISFIYNO" Type="String" MaxLength="7" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CARSTKSATISFIYNO" Type="String" MaxLength="7" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CARLISFIYNO" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CARKEFILKODU1" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CARKEFILKODU2" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CARKEFILKODU3" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CARKEFILKODU4" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CARKEFILKODU5" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CARMUHTIPI" Type="Int32" Nullable="false" />
+          <Property Name="CARMUHKODU" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CARYAZADRNO" Type="Int32" Nullable="false" />
+          <Property Name="CARFATADRNO" Type="Int32" Nullable="false" />
+          <Property Name="CARIRSADRNO" Type="Int32" Nullable="false" />
+          <Property Name="CARBORCTOP" Type="Decimal" Precision="28" Scale="9" Nullable="false" />
+          <Property Name="CARALACAKTOP" Type="Decimal" Precision="28" Scale="9" Nullable="false" />
+          <Property Name="CARBAKIYE" Type="Decimal" Precision="28" Scale="9" Nullable="false" />
+          <Property Name="CARKREDIDOVKOD" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CARKREDIDOVTUR" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CARRISKDOVKOD" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CARRISKDOVTUR" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CARTEMINATTUT" Type="Decimal" Precision="28" Scale="9" Nullable="false" />
+          <Property Name="CARTEMDOVKOD" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CARTEMDOVTUR" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CARGRUPKOD" Type="String" MaxLength="40" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CARKARALISTEFLAG" Type="Int32" Nullable="false" />
+          <Property Name="CARKARALISTEACK" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CARSEVNO" Type="Int32" Nullable="false" />
+          <Property Name="CARGIRIRSTOP" Type="Decimal" Precision="28" Scale="9" Nullable="false" />
+          <Property Name="CARCIKIRSTOP" Type="Decimal" Precision="28" Scale="9" Nullable="false" />
+          <Property Name="CARGIRSIPTOPTUT" Type="Decimal" Precision="28" Scale="9" Nullable="false" />
+          <Property Name="CARCIKSIPTOPTUT" Type="Decimal" Precision="28" Scale="9" Nullable="false" />
+          <Property Name="CARGIRSIPTUTFLAG" Type="Int32" Nullable="false" />
+          <Property Name="CARGIRSIPMINTUT" Type="Decimal" Precision="28" Scale="9" Nullable="false" />
+          <Property Name="CARGIRSIPMAXTUT" Type="Decimal" Precision="28" Scale="9" Nullable="false" />
+          <Property Name="CARCIKSIPTUTFLAG" Type="Int32" Nullable="false" />
+          <Property Name="CARCIKSIPMINTUT" Type="Decimal" Precision="28" Scale="9" Nullable="false" />
+          <Property Name="CARCIKSIPMAXTUT" Type="Decimal" Precision="28" Scale="9" Nullable="false" />
+          <Property Name="CAROZELBORCTOP" Type="Decimal" Precision="28" Scale="9" Nullable="false" />
+          <Property Name="CAROZELALACAKTOP" Type="Decimal" Precision="28" Scale="9" Nullable="false" />
+          <Property Name="CAROZELBAKIYE" Type="Decimal" Precision="28" Scale="9" Nullable="false" />
+          <Property Name="CAREKCHAR1" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CAREKCHAR2" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CAREKINT1" Type="Int32" Nullable="false" />
+          <Property Name="CAREKINT2" Type="Int32" Nullable="false" />
+          <Property Name="CAREKDATE1" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CAREKDATE2" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CAREKDBL1" Type="Decimal" Precision="28" Scale="9" Nullable="false" />
+          <Property Name="CAREKDBL2" Type="Decimal" Precision="28" Scale="9" Nullable="false" />
+          <Property Name="CAREFATFLAG" Type="Int32" Nullable="false" />
+          <Property Name="CAREFATSENARYO" Type="Int32" Nullable="false" />
+          <Property Name="CAREFATEMAIL" Type="String" MaxLength="80" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="CAREFATDONEMTIP" Type="Int32" Nullable="false" />
+          <Property Name="CAREFATDONEMDEG" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="ETA_TEK2012_2012Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="CARKART" EntityType="Self.CARKART" />
+          <EntitySet Name="ADRESLER" EntityType="ETA_TEK2012_2012Model.ADRESLER" />
+        </EntityContainer>
+        <EntityType Name="ADRESLER">
+          <Key>
+            <PropertyRef Name="ADRMODUL" />
+            <PropertyRef Name="ADRKONU" />
+            <PropertyRef Name="ADRTIP" />
+            <PropertyRef Name="ADRKOD1" />
+            <PropertyRef Name="ADRKOD2" />
+            <PropertyRef Name="ADRREFNO" />
+            <PropertyRef Name="ADRITEMNO" />
+            <PropertyRef Name="ADRYETKILI" />
+            <PropertyRef Name="ADRADRES1" />
+            <PropertyRef Name="ADRADRES2" />
+            <PropertyRef Name="ADRADRES3" />
+            <PropertyRef Name="ADRPOSTAKOD" />
+            <PropertyRef Name="ADRULKE" />
+            <PropertyRef Name="ADRIL" />
+            <PropertyRef Name="ADRILCE" />
+            <PropertyRef Name="ADRTEL1" />
+            <PropertyRef Name="ADRTEL2" />
+            <PropertyRef Name="ADRTEL3" />
+            <PropertyRef Name="ADRFAX1" />
+            <PropertyRef Name="ADRFAX2" />
+            <PropertyRef Name="ADRFAX3" />
+            <PropertyRef Name="ADREMAIL1" />
+            <PropertyRef Name="ADREMAIL2" />
+            <PropertyRef Name="ADREMAIL3" />
+            <PropertyRef Name="ADRURL1" />
+            <PropertyRef Name="ADRURL2" />
+            <PropertyRef Name="ADRURL3" />
+          </Key>
+          <Property Name="ADRMODUL" Type="Int32" Nullable="false" />
+          <Property Name="ADRKONU" Type="Int32" Nullable="false" />
+          <Property Name="ADRTIP" Type="Int32" Nullable="false" />
+          <Property Name="ADRKOD1" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="ADRKOD2" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="ADRREFNO" Type="Int32" Nullable="false" />
+          <Property Name="ADRITEMNO" Type="Int32" Nullable="false" />
+          <Property Name="ADRYETKILI" Type="String" Nullable="false" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Name="ADRADRES1" Type="String" Nullable="false" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Name="ADRADRES2" Type="String" Nullable="false" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Name="ADRADRES3" Type="String" Nullable="false" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Name="ADRPOSTAKOD" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="ADRULKE" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="ADRIL" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="ADRILCE" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="ADRTEL1" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="ADRTEL2" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="ADRTEL3" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="ADRFAX1" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="ADRFAX2" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="ADRFAX3" Type="String" Nullable="false" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="ADREMAIL1" Type="String" Nullable="false" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Name="ADREMAIL2" Type="String" Nullable="false" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Name="ADREMAIL3" Type="String" Nullable="false" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Name="ADRURL1" Type="String" Nullable="false" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Name="ADRURL2" Type="String" Nullable="false" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Name="ADRURL3" Type="String" Nullable="false" MaxLength="80" FixedLength="false" Unicode="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="ETA_TEK2012_2012ModelStoreContainer" CdmEntityContainer="ETA_TEK2012_2012Entities">
+          <EntitySetMapping Name="CARKART">
+            <EntityTypeMapping TypeName="ETA_TEK2012_2012Model.CARKART">
+              <MappingFragment StoreEntitySet="CARKART">
+                <ScalarProperty Name="CARKOD" ColumnName="CARKOD" />
+                <ScalarProperty Name="CARUNVAN" ColumnName="CARUNVAN" />
+                <ScalarProperty Name="CARUNVAN2" ColumnName="CARUNVAN2" />
+                <ScalarProperty Name="CARUNVAN3" ColumnName="CARUNVAN3" />
+                <ScalarProperty Name="CARYETKILI" ColumnName="CARYETKILI" />
+                <ScalarProperty Name="CARYETKILI2" ColumnName="CARYETKILI2" />
+                <ScalarProperty Name="CARYETKILI3" ColumnName="CARYETKILI3" />
+                <ScalarProperty Name="CAROZKOD1" ColumnName="CAROZKOD1" />
+                <ScalarProperty Name="CAROZKOD2" ColumnName="CAROZKOD2" />
+                <ScalarProperty Name="CAROZKOD3" ColumnName="CAROZKOD3" />
+                <ScalarProperty Name="CAROZKOD4" ColumnName="CAROZKOD4" />
+                <ScalarProperty Name="CAROZKOD5" ColumnName="CAROZKOD5" />
+                <ScalarProperty Name="CARDOVKOD1" ColumnName="CARDOVKOD1" />
+                <ScalarProperty Name="CARDOVTUR1" ColumnName="CARDOVTUR1" />
+                <ScalarProperty Name="CARDOVKOD2" ColumnName="CARDOVKOD2" />
+                <ScalarProperty Name="CARDOVTUR2" ColumnName="CARDOVTUR2" />
+                <ScalarProperty Name="CARDOVKOD3" ColumnName="CARDOVKOD3" />
+                <ScalarProperty Name="CARDOVTUR3" ColumnName="CARDOVTUR3" />
+                <ScalarProperty Name="CARDOVKOD4" ColumnName="CARDOVKOD4" />
+                <ScalarProperty Name="CARDOVTUR4" ColumnName="CARDOVTUR4" />
+                <ScalarProperty Name="CARDOVKOD5" ColumnName="CARDOVKOD5" />
+                <ScalarProperty Name="CARDOVTUR5" ColumnName="CARDOVTUR5" />
+                <ScalarProperty Name="CARVERDAIRE" ColumnName="CARVERDAIRE" />
+                <ScalarProperty Name="CARVERHESNO" ColumnName="CARVERHESNO" />
+                <ScalarProperty Name="CAROZELKARTNO" ColumnName="CAROZELKARTNO" />
+                <ScalarProperty Name="CARODASICILNO" ColumnName="CARODASICILNO" />
+                <ScalarProperty Name="CARACIK1" ColumnName="CARACIK1" />
+                <ScalarProperty Name="CARACIK2" ColumnName="CARACIK2" />
+                <ScalarProperty Name="CARACIK3" ColumnName="CARACIK3" />
+                <ScalarProperty Name="CARACIK4" ColumnName="CARACIK4" />
+                <ScalarProperty Name="CARACIK5" ColumnName="CARACIK5" />
+                <ScalarProperty Name="CARCALFLAG" ColumnName="CARCALFLAG" />
+                <ScalarProperty Name="CARDERECE" ColumnName="CARDERECE" />
+                <ScalarProperty Name="CARUYARI" ColumnName="CARUYARI" />
+                <ScalarProperty Name="CARISKYUZ" ColumnName="CARISKYUZ" />
+                <ScalarProperty Name="CARMUAFGUN" ColumnName="CARMUAFGUN" />
+                <ScalarProperty Name="CARTAHSILKOD" ColumnName="CARTAHSILKOD" />
+                <ScalarProperty Name="CARTAHSILACK" ColumnName="CARTAHSILACK" />
+                <ScalarProperty Name="CARKREDILIMIT" ColumnName="CARKREDILIMIT" />
+                <ScalarProperty Name="CARRISKLIMIT" ColumnName="CARRISKLIMIT" />
+                <ScalarProperty Name="CARSIPALIMLIMIT" ColumnName="CARSIPALIMLIMIT" />
+                <ScalarProperty Name="CARSIPSATIMLIMIT" ColumnName="CARSIPSATIMLIMIT" />
+                <ScalarProperty Name="CARHESAPGUN" ColumnName="CARHESAPGUN" />
+                <ScalarProperty Name="CARVADENO" ColumnName="CARVADENO" />
+                <ScalarProperty Name="CARODEPLANGRUPNO" ColumnName="CARODEPLANGRUPNO" />
+                <ScalarProperty Name="CARTAKSITGRUPNO" ColumnName="CARTAKSITGRUPNO" />
+                <ScalarProperty Name="CARMUTABAKATTAR" ColumnName="CARMUTABAKATTAR" />
+                <ScalarProperty Name="CARMUTABAKATTUT" ColumnName="CARMUTABAKATTUT" />
+                <ScalarProperty Name="CARGRUPKODU" ColumnName="CARGRUPKODU" />
+                <ScalarProperty Name="CARSEKTORKODU" ColumnName="CARSEKTORKODU" />
+                <ScalarProperty Name="CARBOLGEKODU" ColumnName="CARBOLGEKODU" />
+                <ScalarProperty Name="CARSTKALISFIYNO" ColumnName="CARSTKALISFIYNO" />
+                <ScalarProperty Name="CARSTKSATISFIYNO" ColumnName="CARSTKSATISFIYNO" />
+                <ScalarProperty Name="CARLISFIYNO" ColumnName="CARLISFIYNO" />
+                <ScalarProperty Name="CARKEFILKODU1" ColumnName="CARKEFILKODU1" />
+                <ScalarProperty Name="CARKEFILKODU2" ColumnName="CARKEFILKODU2" />
+                <ScalarProperty Name="CARKEFILKODU3" ColumnName="CARKEFILKODU3" />
+                <ScalarProperty Name="CARKEFILKODU4" ColumnName="CARKEFILKODU4" />
+                <ScalarProperty Name="CARKEFILKODU5" ColumnName="CARKEFILKODU5" />
+                <ScalarProperty Name="CARMUHTIPI" ColumnName="CARMUHTIPI" />
+                <ScalarProperty Name="CARMUHKODU" ColumnName="CARMUHKODU" />
+                <ScalarProperty Name="CARYAZADRNO" ColumnName="CARYAZADRNO" />
+                <ScalarProperty Name="CARFATADRNO" ColumnName="CARFATADRNO" />
+                <ScalarProperty Name="CARIRSADRNO" ColumnName="CARIRSADRNO" />
+                <ScalarProperty Name="CARBORCTOP" ColumnName="CARBORCTOP" />
+                <ScalarProperty Name="CARALACAKTOP" ColumnName="CARALACAKTOP" />
+                <ScalarProperty Name="CARBAKIYE" ColumnName="CARBAKIYE" />
+                <ScalarProperty Name="CARKREDIDOVKOD" ColumnName="CARKREDIDOVKOD" />
+                <ScalarProperty Name="CARKREDIDOVTUR" ColumnName="CARKREDIDOVTUR" />
+                <ScalarProperty Name="CARRISKDOVKOD" ColumnName="CARRISKDOVKOD" />
+                <ScalarProperty Name="CARRISKDOVTUR" ColumnName="CARRISKDOVTUR" />
+                <ScalarProperty Name="CARTEMINATTUT" ColumnName="CARTEMINATTUT" />
+                <ScalarProperty Name="CARTEMDOVKOD" ColumnName="CARTEMDOVKOD" />
+                <ScalarProperty Name="CARTEMDOVTUR" ColumnName="CARTEMDOVTUR" />
+                <ScalarProperty Name="CARGRUPKOD" ColumnName="CARGRUPKOD" />
+                <ScalarProperty Name="CARKARALISTEFLAG" ColumnName="CARKARALISTEFLAG" />
+                <ScalarProperty Name="CARKARALISTEACK" ColumnName="CARKARALISTEACK" />
+                <ScalarProperty Name="CARSEVNO" ColumnName="CARSEVNO" />
+                <ScalarProperty Name="CARGIRIRSTOP" ColumnName="CARGIRIRSTOP" />
+                <ScalarProperty Name="CARCIKIRSTOP" ColumnName="CARCIKIRSTOP" />
+                <ScalarProperty Name="CARGIRSIPTOPTUT" ColumnName="CARGIRSIPTOPTUT" />
+                <ScalarProperty Name="CARCIKSIPTOPTUT" ColumnName="CARCIKSIPTOPTUT" />
+                <ScalarProperty Name="CARGIRSIPTUTFLAG" ColumnName="CARGIRSIPTUTFLAG" />
+                <ScalarProperty Name="CARGIRSIPMINTUT" ColumnName="CARGIRSIPMINTUT" />
+                <ScalarProperty Name="CARGIRSIPMAXTUT" ColumnName="CARGIRSIPMAXTUT" />
+                <ScalarProperty Name="CARCIKSIPTUTFLAG" ColumnName="CARCIKSIPTUTFLAG" />
+                <ScalarProperty Name="CARCIKSIPMINTUT" ColumnName="CARCIKSIPMINTUT" />
+                <ScalarProperty Name="CARCIKSIPMAXTUT" ColumnName="CARCIKSIPMAXTUT" />
+                <ScalarProperty Name="CAROZELBORCTOP" ColumnName="CAROZELBORCTOP" />
+                <ScalarProperty Name="CAROZELALACAKTOP" ColumnName="CAROZELALACAKTOP" />
+                <ScalarProperty Name="CAROZELBAKIYE" ColumnName="CAROZELBAKIYE" />
+                <ScalarProperty Name="CAREKCHAR1" ColumnName="CAREKCHAR1" />
+                <ScalarProperty Name="CAREKCHAR2" ColumnName="CAREKCHAR2" />
+                <ScalarProperty Name="CAREKINT1" ColumnName="CAREKINT1" />
+                <ScalarProperty Name="CAREKINT2" ColumnName="CAREKINT2" />
+                <ScalarProperty Name="CAREKDATE1" ColumnName="CAREKDATE1" />
+                <ScalarProperty Name="CAREKDATE2" ColumnName="CAREKDATE2" />
+                <ScalarProperty Name="CAREKDBL1" ColumnName="CAREKDBL1" />
+                <ScalarProperty Name="CAREKDBL2" ColumnName="CAREKDBL2" />
+                <ScalarProperty Name="CAREFATFLAG" ColumnName="CAREFATFLAG" />
+                <ScalarProperty Name="CAREFATSENARYO" ColumnName="CAREFATSENARYO" />
+                <ScalarProperty Name="CAREFATEMAIL" ColumnName="CAREFATEMAIL" />
+                <ScalarProperty Name="CAREFATDONEMTIP" ColumnName="CAREFATDONEMTIP" />
+                <ScalarProperty Name="CAREFATDONEMDEG" ColumnName="CAREFATDONEMDEG" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ADRESLER">
+            <EntityTypeMapping TypeName="ETA_TEK2012_2012Model.ADRESLER">
+              <MappingFragment StoreEntitySet="ADRESLER">
+                <ScalarProperty Name="ADRURL3" ColumnName="ADRURL3" />
+                <ScalarProperty Name="ADRURL2" ColumnName="ADRURL2" />
+                <ScalarProperty Name="ADRURL1" ColumnName="ADRURL1" />
+                <ScalarProperty Name="ADREMAIL3" ColumnName="ADREMAIL3" />
+                <ScalarProperty Name="ADREMAIL2" ColumnName="ADREMAIL2" />
+                <ScalarProperty Name="ADREMAIL1" ColumnName="ADREMAIL1" />
+                <ScalarProperty Name="ADRFAX3" ColumnName="ADRFAX3" />
+                <ScalarProperty Name="ADRFAX2" ColumnName="ADRFAX2" />
+                <ScalarProperty Name="ADRFAX1" ColumnName="ADRFAX1" />
+                <ScalarProperty Name="ADRTEL3" ColumnName="ADRTEL3" />
+                <ScalarProperty Name="ADRTEL2" ColumnName="ADRTEL2" />
+                <ScalarProperty Name="ADRTEL1" ColumnName="ADRTEL1" />
+                <ScalarProperty Name="ADRILCE" ColumnName="ADRILCE" />
+                <ScalarProperty Name="ADRIL" ColumnName="ADRIL" />
+                <ScalarProperty Name="ADRULKE" ColumnName="ADRULKE" />
+                <ScalarProperty Name="ADRPOSTAKOD" ColumnName="ADRPOSTAKOD" />
+                <ScalarProperty Name="ADRADRES3" ColumnName="ADRADRES3" />
+                <ScalarProperty Name="ADRADRES2" ColumnName="ADRADRES2" />
+                <ScalarProperty Name="ADRADRES1" ColumnName="ADRADRES1" />
+                <ScalarProperty Name="ADRYETKILI" ColumnName="ADRYETKILI" />
+                <ScalarProperty Name="ADRITEMNO" ColumnName="ADRITEMNO" />
+                <ScalarProperty Name="ADRREFNO" ColumnName="ADRREFNO" />
+                <ScalarProperty Name="ADRKOD2" ColumnName="ADRKOD2" />
+                <ScalarProperty Name="ADRKOD1" ColumnName="ADRKOD1" />
+                <ScalarProperty Name="ADRTIP" ColumnName="ADRTIP" />
+                <ScalarProperty Name="ADRKONU" ColumnName="ADRKONU" />
+                <ScalarProperty Name="ADRMODUL" ColumnName="ADRMODUL" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
