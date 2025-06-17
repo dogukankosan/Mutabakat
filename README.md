@@ -2,7 +2,7 @@
 
 ## 📝 Tanıtım
 
-**Mutabakat**,Eta Muhasebe Programı için şirketlerin cari hesap ve mutabakat işlemlerini kolay, hızlı ve güvenli şekilde yönetebilmesi için geliştirilmiş kapsamlı bir Windows Forms uygulamasıdır. Müşteri, adres, bakiye ve raporlama süreçlerini merkezi bir arayüzde birleştirir.
+**Mutabakat**, Eta Muhasebe Programı için şirketlerin cari hesap ve mutabakat işlemlerini kolay, hızlı ve güvenli şekilde yönetebilmesi için geliştirilmiş kapsamlı bir Windows Forms uygulamasıdır. Müşteri, adres, bakiye ve raporlama süreçlerini merkezi bir arayüzde birleştirir.
 
 ---
 
